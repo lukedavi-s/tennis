@@ -1,0 +1,132 @@
+/* Google fonts, fontawesome fonts */
+    @import url('https://fonts.googleapis.com/css?family=Roboto');
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    header {
+        background: linear-gradient(#1e1e1e, #663399);
+        height: 73px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10000;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    }
+
+    /* The three-bar menu at the left side of the header */
+    header #burger {
+        position: absolute;
+        left: 12px;
+        top: 22px;
+        opacity: .6;
+        color: white;
+    }
+
+    header #burger:hover {
+        opacity: 1;
+        transition: 500ms;
+    }
+
+    /* The entire nav drawer */
+    nav {
+        font-family: 'Roboto', sans-serif;
+        background: #663399;
+        width: 200px;
+        position: fixed;
+        left: 0;
+        top: 72px;
+        z-index: 10000;
+        border-bottom-right-radius: 3px;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .5);
+    }
+
+    /* Nav hidden from view (Just slid over 145 pixels to the left) */
+    #nav.iconsonly {
+        left: -145px;
+        transition: 500ms;
+    }
+
+    /* Nav drawer fully visible (not slid over to the left)  */
+    #nav.fullmenu {
+        left: 0;
+        transition: 500ms;
+    }
+
+    /* Each nav link */
+    nav a {
+        box-sizing: border-box;
+        display: block;
+        text-align: left;
+        color: white;
+        text-decoration: none;
+        width: 98%;
+        padding: 1em;
+        opacity: .6;
+        position: relative;
+        z-index: 11000;
+        font-size: 110%;
+    }
+
+    /* Brighten the link a little when under the mouse pointer */
+    nav a:hover {
+        opacity: 1;
+        transition: 500ms;
+    }
+
+
+    /* We use JavaScript to apply this style to the link that */
+    /* represents the current page so that link is highlighted  */
+    nav a.currentpage,
+    nav a.currentpage::after {
+        opacity: 1;
+		color: #84b118;
+    }
+
+    /* The icon at the right of each nav item */
+    nav a::after {
+        font-family: FontAwesome;
+        font-size: 160%;
+        opacity: .6;
+        position: absolute;
+        right: 10px;
+    }
+
+
+    /* The font awesome character at the right of each menu item */
+    nav a#home::after {
+        content: "\f015";   /* Home */
+    }
+
+    nav a#page2::after {
+        content: "\f164";    /* Thumbs Up */
+    }
+
+
+    nav a#page3::after {
+        content: "\f030";    /* Camera */
+    }
+
+
+    article {
+        margin: 82px 24px 100px 62px;
+        color: white;
+    }
+
+    article h1 {
+        margin: 0;
+    }
+    table {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    body {
+      background-color: #84b118;
+      font-family: 'Roboto', sans-serif;
+    }
+    #localnews {
+      display: block;
+      width: 420px;
+      height: 315px;
+      margin: 0 auto;
+    }
