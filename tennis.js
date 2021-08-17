@@ -20,7 +20,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
         links[i].className = 'currentpage';
       }
     }
-
-
-  //make sure all JavaScript code is within this block
-})//end of document.addEventListener block
+})
